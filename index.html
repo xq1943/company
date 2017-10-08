@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DocumeDnt</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header__content">
+      <ul>
+        <li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+        <li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+        <li><a href="#" onclick="">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="logo">
+      <div class="logo__left">
+        <img src="images/logo.jpg" alt="logo图片">
+      </div>
+      <div class="logo__right">
+        <p>24小时服务热线：<span>123-456-7890</span></p>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="nav__left">
+        <ul>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">关于慕课</a></li>
+          <li><a href="#">新闻动态</a></li>
+          <li><a href="#">课程中心</a></li>
+          <li><a href="#">在线课程</a></li>
+          <li><a href="#">人才招聘</a></li>
+        </ul>
+      </div>
+      <div class="nav__right">
+        <input type="text">
+      </div>
+    </div>
+    <div class="ad">
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="http://img.imooc.com/59cb0bfc00011c9609360316.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="http://img.imooc.com/59cb86aa0001844c09360316.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="http://img.imooc.com/599eb4be0001e71b09360316.jpg" alt=""></div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>	
+    </div>
+    <div class="main">
+      <div class="main__news">
+        <div class="main__title">
+          <a>More&gt;&gt;</a>
+          <h2>课程中心</h2>
+        </div>
+        <div class="main__pic-news">
+          <div class="left">
+            <img src="images/news.jpg" alt="">
+            <h2><a href="#" class="title">520慕女神喊话你来表白！</a></h2>
+            <p>
+              活动时间：5月20-5月25号<br>
+              获奖公布时间：5月26日<br>
+              <a href="#" class="more">More&gt;&gt;</a>
+            </p>
+          </div>
+        </div>
+        <ul class="main__info-list">
+            <li><span>2017-06-01</span><a href="">【慕课访谈 用户篇】“有为屌丝”在路上</a></li>
+            <li><span>2017-06-01</span><a href="#">【有奖活动】给父亲的三行书信</a></li>
+            <li><span>2017-06-01</span><a href="#">【程序猿，请晒出你的童年】活动获奖公告</a></li>
+        </ul>
+      </div>
+      <div class="main__products">
+        <div class="main__title">
+          <a>More&gt;&gt;</a>
+          <h2>新闻中心</h2>
+        </div>
+        <div class="main__products-pic">
+          <img src="images/css.jpg" alt="">
+          <h2><a href="#">CSS圆角进化论</a></h2>
+          <p>CSS圆角的实现，经历了三大发展阶段：背景图片方式、CSS2.0+HTML标签模式、CSS3.0圆角属性。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析<a href="#" class="more">More&gt;&gt;</a></p>
+          </div>
+          <ul class="main__info-list main__info-lsit_width">
+              <li><a href="#">手把手从0打造电商平台-前端开发</a><span>Web</span></li>
+              <li><a href="#">SSM到Spring Boot-cong零开发校园商铺平台</a><span>Spring</span></li>
+              <li><a href="#">Vue2.0——Node.js+MogoDB全栈打造商城系统</a><span>Vue</span></li>
+              <!-- 注意：如果在iE下出现span的内容错位——可将span作为第一个子元素放在li中即可 （浮动问题）-->
+          </ul>
+      </div>
+      <div class="main__sidebar">
+        <div class="main__title">
+          <a>More&gt;&gt;</a>
+          <h2> 媒体聚焦</h2>
+        </div>
+        <div class="main__video">
+            <object width=220 height=140><param name="movie" value="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=80227177&autoplay=false&from=page"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="Transparent"></param><embed width=220 height=140 wmode="Transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=80227177&autoplay=false&from=page" type="application/x-shockwave-flash"/></embed></object>
+        </div>
+      </div>
+    </div><!-- main结束 -->
+  </div><!-- wrap结束  -->
+  <div class="footer">
+    <div class="footer__content">
+      <ul>
+        <li class="first">关于</li>
+        <li><a href="#">品牌故事</a></li>
+        <li><a href="#">练习我们</a></li>
+        <li><a href="#">加入我们</a></li>
+        <li><a href="#">版权声明</a></li>
+      </ul>
+      <ul>
+        <li class="first">课程</li>
+        <li><a href="#">PHP开发</a></li>
+        <li><a href="#">前端开发</a></li>
+        <li><a href="#">JAVA开发</a></li>
+        <li><a href="#">Android开发</a></li>
+      </ul>
+      <ul>
+        <li class="first">留言</li>
+        <li><a href="#">新浪微博</a></li>
+        <li><a href="#">腾讯微博</a></li>
+        <li><a href="#">企业微信</a></li>
+        <li><a href="#">QQ空间</a></li>
+      </ul>
+      <ul>
+        <li class="first">关注</li>
+        <li><a href="#">意见反馈</a></li>
+        <li><a href="#">问题留言</a></li>
+        <li><a href="#">媒体联络</a></li>
+        <li><a href="#">在线客服</a></li>
+      </ul>
+      <ul class="last">
+        <li class="first">微信关注</li>
+        <li><img src="images/qrcode.jpg" alt=""></li></li>
+      </ul>
+    </div>
+  </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+  <script>        
+    var mySwiper = new Swiper ('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      
+      // 如果需要分页器
+      pagination: '.swiper-pagination',
+      
+      // 如果需要前进后退按钮
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+
+      autoplay: 4000,
+      paginationClickable :true,
+      
+    })        
+    </script>
+</body>
+</html>
